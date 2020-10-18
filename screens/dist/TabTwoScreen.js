@@ -3,47 +3,78 @@ exports.__esModule = true;
 var React = require("react");
 var react_native_1 = require("react-native");
 var vector_icons_1 = require("@expo/vector-icons");
-var EditScreenInfo_1 = require("../components/EditScreenInfo");
 var Themed_1 = require("../components/Themed");
 function TabTwoScreen() {
     return (React.createElement(Themed_1.View, { style: styles.container },
         React.createElement(react_native_1.Image, { source: require("../assets/images/skier-illustration.png"), style: {
-                width: 300,
-                height: 160,
+                width: 320,
+                height: 190,
                 borderRadius: 20,
-                marginBottom: 20,
+                marginVertical: 30,
                 alignSelf: "center"
             } }),
         React.createElement(Themed_1.View, { style: styles.holder },
             React.createElement(Themed_1.View, { style: styles.optionsholder },
                 React.createElement(react_native_1.TouchableOpacity, { style: styles.carstyle, onPress: function () { } },
-                    React.createElement(vector_icons_1.Ionicons, { name: "md-car", size: 37, color: "#1976d2" }),
+                    React.createElement(vector_icons_1.Ionicons, { name: "ios-car", size: 37, color: "#1976d2" }),
                     React.createElement(Themed_1.Text, null, "Taxi")),
                 React.createElement(react_native_1.TouchableOpacity, { style: styles.bus, onPress: function () { } },
-                    React.createElement(vector_icons_1.Ionicons, { name: "md-bus", size: 37, color: "#536dfe" }),
+                    React.createElement(vector_icons_1.Ionicons, { name: "ios-bus", size: 37, color: "#536dfe" }),
                     React.createElement(Themed_1.Text, null, "Bus")),
                 React.createElement(react_native_1.TouchableOpacity, { style: styles.airplane, onPress: function () { } },
-                    React.createElement(vector_icons_1.Ionicons, { name: "md-airplane", size: 37, color: "#ff4081" }),
+                    React.createElement(vector_icons_1.Ionicons, { name: "ios-jet", size: 37, color: "#3949ab" }),
                     React.createElement(Themed_1.Text, null, "Flight")),
                 React.createElement(react_native_1.TouchableOpacity, { style: styles.train, onPress: function () { } },
-                    React.createElement(vector_icons_1.Ionicons, { name: "md-train", size: 37, color: "#1a237e" }),
+                    React.createElement(vector_icons_1.Ionicons, { name: "ios-train", size: 37, color: "#1a237e" }),
                     React.createElement(Themed_1.Text, null, "Train"))),
             React.createElement(Themed_1.View, { style: styles.optionstwo },
+                React.createElement(react_native_1.TouchableOpacity, { style: styles.airplane, onPress: function () { } },
+                    React.createElement(vector_icons_1.Ionicons, { name: "ios-compass", size: 37, color: "#1e88e5" }),
+                    React.createElement(Themed_1.Text, null, "Adventure")),
                 React.createElement(react_native_1.TouchableOpacity, { style: styles.carstyle, onPress: function () { } },
-                    React.createElement(vector_icons_1.Ionicons, { name: "md-car", size: 37, color: "#fff" }),
+                    React.createElement(vector_icons_1.Ionicons, { name: "ios-cafe", size: 37, color: "#fff" }),
                     React.createElement(Themed_1.Text, null, "Eats")),
                 React.createElement(react_native_1.TouchableOpacity, { style: styles.train, onPress: function () { } },
-                    React.createElement(vector_icons_1.Ionicons, { name: "md-train", size: 37, color: "#fff" }),
+                    React.createElement(vector_icons_1.Ionicons, { name: "ios-bonfire", size: 37, color: "#e53935" }),
                     React.createElement(Themed_1.Text, null, "Events")),
                 React.createElement(react_native_1.TouchableOpacity, { style: styles.bus, onPress: function () { } },
-                    React.createElement(vector_icons_1.Ionicons, { name: "md-bed", size: 37, color: "#7986cb" }),
-                    React.createElement(Themed_1.Text, null, "Hotels")),
-                React.createElement(react_native_1.TouchableOpacity, { style: styles.airplane, onPress: function () { } },
-                    React.createElement(vector_icons_1.Ionicons, { name: "md-compass", size: 37, color: "#1e88e5" }),
-                    React.createElement(Themed_1.Text, null, "Adventure")))),
-        React.createElement(Themed_1.Text, { style: styles.title }, "Tab Two"),
-        React.createElement(Themed_1.View, { style: styles.separator, lightColor: "#eee", darkColor: "rgba(255,255,255,0.1)" }),
-        React.createElement(EditScreenInfo_1["default"], { path: "Flight" })));
+                    React.createElement(vector_icons_1.Ionicons, { name: "ios-bed", size: 37, color: "#7986cb" }),
+                    React.createElement(Themed_1.Text, null, "Hotels")))),
+        React.createElement(Themed_1.Text, { style: styles.title }, "Destination"),
+        React.createElement(Themed_1.View, { style: styles.destination },
+            React.createElement(Themed_1.View, { style: styles.pagination },
+                React.createElement(react_native_1.TouchableOpacity, { onPress: function () { } },
+                    React.createElement(react_native_1.Image, { source: require("../assets/images/skier-illustration.png"), style: {
+                            width: 100,
+                            height: 140,
+                            borderRadius: 20,
+                            alignSelf: "center"
+                        } }),
+                    React.createElement(Themed_1.Text, null, "Hylax Hills")),
+                React.createElement(react_native_1.TouchableOpacity, { onPress: function () { } },
+                    React.createElement(react_native_1.Image, { source: require("../assets/images/skier-illustration.png"), style: {
+                            width: 100,
+                            height: 140,
+                            borderRadius: 20,
+                            alignSelf: "center"
+                        } }),
+                    React.createElement(Themed_1.Text, null, "Hells Gate")),
+                React.createElement(react_native_1.TouchableOpacity, { onPress: function () { } },
+                    React.createElement(react_native_1.Image, { source: require("../assets/images/skier-illustration.png"), style: {
+                            width: 100,
+                            height: 140,
+                            borderRadius: 20,
+                            alignSelf: "center"
+                        } }),
+                    React.createElement(Themed_1.Text, null, "Ngong Hills")),
+                React.createElement(react_native_1.TouchableOpacity, { onPress: function () { } },
+                    React.createElement(react_native_1.Image, { source: require("../assets/images/skier-illustration.png"), style: {
+                            width: 100,
+                            height: 140,
+                            borderRadius: 20,
+                            alignSelf: "center"
+                        } }),
+                    React.createElement(Themed_1.Text, null, "Longonot"))))));
 }
 exports["default"] = TabTwoScreen;
 var styles = react_native_1.StyleSheet.create({
@@ -54,7 +85,9 @@ var styles = react_native_1.StyleSheet.create({
     },
     title: {
         fontSize: 20,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        marginRight: 200,
+        marginBottom: 5
     },
     separator: {
         marginVertical: 30,
@@ -65,13 +98,23 @@ var styles = react_native_1.StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between"
     },
+    destination: {
+        marginBottom: 0
+    },
+    holder: {
+        marginVertical: 5
+    },
+    pagination: {
+        flexDirection: "row",
+        justifyContent: "space-between"
+    },
     optionstwo: {
         flexDirection: "row",
         justifyContent: "space-between",
-        marginVertical: 20
+        marginVertical: 10
     },
     carstyle: {
-        backgroundColor: "#ffd740",
+        backgroundColor: "#e1bee7",
         height: 60,
         justifyContent: "center",
         alignItems: "center",

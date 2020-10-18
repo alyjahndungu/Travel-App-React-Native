@@ -64,7 +64,7 @@ function TabOneNavigator() {
 var TabTwoStack = stack_1.createStackNavigator();
 function TabTwoNavigator() {
     return (React.createElement(TabTwoStack.Navigator, null,
-        React.createElement(TabTwoStack.Screen, { name: "TabTwoScreen", component: TabTwoScreen_1["default"], options: { headerTitle: 'TTernTicket' } })));
+        React.createElement(TabTwoStack.Screen, { name: "TabTwoScreen", component: TabTwoScreen_1["default"], options: { headerTitle: 'TernTicket' } })));
 }
 var TabThreeStack = stack_1.createStackNavigator();
 function TabThreeNavigator() {

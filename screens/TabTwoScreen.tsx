@@ -11,61 +11,113 @@ export default function TabTwoScreen() {
       <Image
         source={require("../assets/images/skier-illustration.png")}
         style={{
-          width: 300,
-          height: 160,
+          width: 320,
+          height: 190,
           borderRadius: 20,
-          marginBottom: 20,
+          marginVertical: 30,
           alignSelf: "center",
         }}
       />
       <View style={styles.holder}>
         <View style={styles.optionsholder}>
           <TouchableOpacity style={styles.carstyle} onPress={() => {}}>
-            <Ionicons name="md-car" size={37} color="#1976d2" />
+            <Ionicons name="ios-car" size={37} color="#1976d2" />
             <Text>Taxi</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.bus} onPress={() => {}}>
-            <Ionicons name="md-bus" size={37} color="#536dfe" />
+            <Ionicons name="ios-bus" size={37} color="#536dfe" />
             <Text>Bus</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.airplane} onPress={() => {}}>
-            <Ionicons name="md-airplane" size={37} color="#ff4081" />
+            <Ionicons name="ios-jet" size={37} color="#3949ab" />
             <Text>Flight</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.train} onPress={() => {}}>
-            <Ionicons name="md-train" size={37} color="#1a237e" />
+            <Ionicons name="ios-train" size={37} color="#1a237e" />
             <Text>Train</Text>
           </TouchableOpacity>
         </View>
 
 
         <View style={styles.optionstwo}>
+         <TouchableOpacity style={styles.airplane} onPress={() => {}}>
+            <Ionicons name="ios-compass" size={37} color="#1e88e5" />
+            <Text>Adventure</Text>
+          </TouchableOpacity>
           <TouchableOpacity style={styles.carstyle} onPress={() => {}}>
-            <Ionicons name="md-car" size={37} color="#fff" />
+            <Ionicons name="ios-cafe" size={37} color="#fff" />
             <Text>Eats</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.train} onPress={() => {}}>
-            <Ionicons name="md-train" size={37} color="#fff" />
+            <Ionicons name="ios-bonfire" size={37} color="#e53935" />
             <Text >Events</Text>
           </TouchableOpacity>
            <TouchableOpacity style={styles.bus} onPress={() => {}}>
-            <Ionicons name="md-bed" size={37} color="#7986cb" />
+            <Ionicons name="ios-bed" size={37} color="#7986cb" />
             <Text>Hotels</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.airplane} onPress={() => {}}>
-            <Ionicons name="md-compass" size={37} color="#1e88e5" />
-            <Text>Adventure</Text>
-          </TouchableOpacity>
+         
         </View>
       </View>
 
-      <Text style={styles.title}>Tab Two</Text>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
+      <Text style={styles.title}>Destination</Text>
+
+      <View style={styles.destination}>
+        <View style={styles.pagination}>
+          <TouchableOpacity onPress={() => {}}>
+              <Image
+        source={require("../assets/images/skier-illustration.png")}
+        style={{
+          width: 100,
+          height: 140,
+          borderRadius: 20,
+          alignSelf: "center",
+        }}
       />
-      <EditScreenInfo path="Flight" />
+            <Text>Hylax Hills</Text>
+          </TouchableOpacity>
+          <TouchableOpacity  onPress={() => {}}>
+                  <Image
+        source={require("../assets/images/skier-illustration.png")}
+        style={{
+          width: 100,
+          height: 140,
+          borderRadius: 20,
+          alignSelf: "center",
+        }}
+      />
+            <Text>Hells Gate</Text>
+          </TouchableOpacity>
+          <TouchableOpacity  onPress={() => {}}>
+                    <Image
+        source={require("../assets/images/skier-illustration.png")}
+        style={{
+          width: 100,
+          height: 140,
+          borderRadius: 20,
+          alignSelf: "center",
+        }}
+      />
+            <Text>Ngong Hills</Text>
+          </TouchableOpacity>
+          <TouchableOpacity  onPress={() => {}}>
+                   <Image
+        source={require("../assets/images/skier-illustration.png")}
+        style={{
+          width: 100,
+          height: 140,
+          borderRadius: 20,
+          alignSelf: "center",
+        }}
+      />
+            <Text>Longonot</Text>
+          </TouchableOpacity>
+        </View>
+      
+      
+      </View>
+
+      
     </View>
   );
 }
@@ -79,6 +131,9 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: "bold",
+    marginRight: 200,
+    marginBottom: 5,
+    
   },
   separator: {
     marginVertical: 30,
@@ -88,15 +143,27 @@ const styles = StyleSheet.create({
   optionsholder: {
     flexDirection: "row",
     justifyContent: "space-between",
+
   }, 
+  destination: {
+        marginBottom: 0,
+
+  }, 
+  holder: {
+    marginVertical: 5,
+  }, 
+  pagination: {
+     flexDirection: "row",
+    justifyContent: "space-between",
+  },  
   
   optionstwo: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginVertical: 20
+    marginVertical: 10
   },
   carstyle: {
-    backgroundColor: "#ffd740",
+    backgroundColor: "#e1bee7",
     height: 60,
     justifyContent: "center",
     alignItems: "center",
