@@ -26,21 +26,21 @@ function TabTwoScreen() {
                     React.createElement(vector_icons_1.Ionicons, { name: "md-airplane", size: 37, color: "#ff4081" }),
                     React.createElement(Themed_1.Text, null, "Flight")),
                 React.createElement(react_native_1.TouchableOpacity, { style: styles.train, onPress: function () { } },
-                    React.createElement(vector_icons_1.Ionicons, { name: "md-train", size: 37, color: "#fff" }),
+                    React.createElement(vector_icons_1.Ionicons, { name: "md-train", size: 37, color: "#1a237e" }),
                     React.createElement(Themed_1.Text, null, "Train"))),
-            React.createElement(Themed_1.View, { style: styles.optionsholder },
+            React.createElement(Themed_1.View, { style: styles.optionstwo },
                 React.createElement(react_native_1.TouchableOpacity, { style: styles.carstyle, onPress: function () { } },
                     React.createElement(vector_icons_1.Ionicons, { name: "md-car", size: 37, color: "#fff" }),
                     React.createElement(Themed_1.Text, null, "Cab")),
-                React.createElement(react_native_1.TouchableOpacity, { style: styles.bus, onPress: function () { } },
-                    React.createElement(vector_icons_1.Ionicons, { name: "md-bus", size: 37, color: "#fff" }),
-                    React.createElement(Themed_1.Text, null, "Bus")),
-                React.createElement(react_native_1.TouchableOpacity, { style: styles.airplane, onPress: function () { } },
-                    React.createElement(vector_icons_1.Ionicons, { name: "md-airplane", size: 37, color: "#1e88e5" }),
-                    React.createElement(Themed_1.Text, null, "bus")),
                 React.createElement(react_native_1.TouchableOpacity, { style: styles.train, onPress: function () { } },
                     React.createElement(vector_icons_1.Ionicons, { name: "md-train", size: 37, color: "#fff" }),
-                    React.createElement(Themed_1.Text, null, "Train")))),
+                    React.createElement(Themed_1.Text, null, "Train")),
+                React.createElement(react_native_1.TouchableOpacity, { style: styles.bus, onPress: function () { } },
+                    React.createElement(vector_icons_1.Ionicons, { name: "md-bed", size: 37, color: "#fff" }),
+                    React.createElement(Themed_1.Text, null, "Hotels")),
+                React.createElement(react_native_1.TouchableOpacity, { style: styles.airplane, onPress: function () { } },
+                    React.createElement(vector_icons_1.Ionicons, { name: "md-", size: 37, color: "#1e88e5" }),
+                    React.createElement(Themed_1.Text, null, "bus")))),
         React.createElement(Themed_1.Text, { style: styles.title }, "Tab Two"),
         React.createElement(Themed_1.View, { style: styles.separator, lightColor: "#eee", darkColor: "rgba(255,255,255,0.1)" }),
         React.createElement(EditScreenInfo_1["default"], { path: "Flight" })));
@@ -64,6 +64,11 @@ var styles = react_native_1.StyleSheet.create({
     optionsholder: {
         flexDirection: "row",
         justifyContent: "space-between"
+    },
+    optionstwo: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginVertical: 20
     },
     carstyle: {
         backgroundColor: "#ffd740",

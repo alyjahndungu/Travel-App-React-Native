@@ -33,28 +33,27 @@ export default function TabTwoScreen() {
             <Text>Flight</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.train} onPress={() => {}}>
-            <Ionicons name="md-train" size={37} color="#fff" />
+            <Ionicons name="md-train" size={37} color="#1a237e" />
             <Text>Train</Text>
           </TouchableOpacity>
         </View>
 
-        <View style={styles.optionsholder}>
+        <View style={styles.optionstwo}>
           <TouchableOpacity style={styles.carstyle} onPress={() => {}}>
             <Ionicons name="md-car" size={37} color="#fff" />
             <Text>Cab</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.bus} onPress={() => {}}>
-            <Ionicons name="md-bus" size={37} color="#fff" />
-            <Text>Bus</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.airplane} onPress={() => {}}>
-            <Ionicons name="md-airplane" size={37} color="#1e88e5" />
-            <Text>bus</Text>
-          </TouchableOpacity>
           <TouchableOpacity style={styles.train} onPress={() => {}}>
             <Ionicons name="md-train" size={37} color="#fff" />
             <Text >Train</Text>
-
+          </TouchableOpacity>
+           <TouchableOpacity style={styles.bus} onPress={() => {}}>
+            <Ionicons name="md-bed" size={37} color="#fff" />
+            <Text>Hotels</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.airplane} onPress={() => {}}>
+            <Ionicons name="md-" size={37} color="#1e88e5" />
+            <Text>bus</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -88,6 +87,12 @@ const styles = StyleSheet.create({
   optionsholder: {
     flexDirection: "row",
     justifyContent: "space-between",
+  }, 
+  
+  optionstwo: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginVertical: 20
   },
   carstyle: {
     backgroundColor: "#ffd740",
