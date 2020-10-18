@@ -12,9 +12,9 @@ export default function TabTwoScreen() {
         source={require("../assets/images/skier-illustration.png")}
         style={{
           width: 300,
-          height: 200,
+          height: 160,
           borderRadius: 20,
-          marginBottom: 60,
+          marginBottom: 20,
           alignSelf: "center",
         }}
       />
@@ -22,7 +22,7 @@ export default function TabTwoScreen() {
         <View style={styles.optionsholder}>
           <TouchableOpacity style={styles.carstyle} onPress={() => {}}>
             <Ionicons name="md-car" size={37} color="#1976d2" />
-            <Text>Cab</Text>
+            <Text>Taxi</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.bus} onPress={() => {}}>
             <Ionicons name="md-bus" size={37} color="#536dfe" />
@@ -38,22 +38,23 @@ export default function TabTwoScreen() {
           </TouchableOpacity>
         </View>
 
+
         <View style={styles.optionstwo}>
           <TouchableOpacity style={styles.carstyle} onPress={() => {}}>
             <Ionicons name="md-car" size={37} color="#fff" />
-            <Text>Cab</Text>
+            <Text>Eats</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.train} onPress={() => {}}>
             <Ionicons name="md-train" size={37} color="#fff" />
-            <Text >Train</Text>
+            <Text >Events</Text>
           </TouchableOpacity>
            <TouchableOpacity style={styles.bus} onPress={() => {}}>
-            <Ionicons name="md-bed" size={37} color="#fff" />
+            <Ionicons name="md-bed" size={37} color="#7986cb" />
             <Text>Hotels</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.airplane} onPress={() => {}}>
-            <Ionicons name="md-" size={37} color="#1e88e5" />
-            <Text>bus</Text>
+            <Ionicons name="md-compass" size={37} color="#1e88e5" />
+            <Text>Adventure</Text>
           </TouchableOpacity>
         </View>
       </View>

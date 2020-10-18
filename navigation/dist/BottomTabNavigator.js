@@ -23,22 +23,28 @@ var BottomTab = bottom_tabs_1.createBottomTabNavigator();
 function BottomTabNavigator() {
     var colorScheme = useColorScheme_1["default"]();
     return (React.createElement(BottomTab.Navigator, { initialRouteName: "TabOne", tabBarOptions: { activeTintColor: Colors_1["default"][colorScheme].tint } },
-        React.createElement(BottomTab.Screen, { name: "TabOne", component: TabOneNavigator, options: {
+        React.createElement(BottomTab.Screen, { name: "Home", component: TabOneNavigator, options: {
                 tabBarIcon: function (_a) {
                     var color = _a.color;
-                    return React.createElement(TabBarIcon, { name: "ios-code", color: color });
+                    return React.createElement(TabBarIcon, { name: "ios-home", color: color });
                 }
             } }),
-        React.createElement(BottomTab.Screen, { name: "TabTwo", component: TabTwoNavigator, options: {
+        React.createElement(BottomTab.Screen, { name: "Search", component: TabTwoNavigator, options: {
                 tabBarIcon: function (_a) {
                     var color = _a.color;
-                    return React.createElement(TabBarIcon, { name: "ios-code", color: color });
+                    return React.createElement(TabBarIcon, { name: "ios-search", color: color });
                 }
             } }),
-        React.createElement(BottomTab.Screen, { name: "TabThree", component: TabThreeNavigator, options: {
+        React.createElement(BottomTab.Screen, { name: "Notifications", component: TabThreeNavigator, options: {
                 tabBarIcon: function (_a) {
                     var color = _a.color;
-                    return React.createElement(TabBarIcon, { name: "ios-code", color: color });
+                    return React.createElement(TabBarIcon, { name: "ios-text", color: color });
+                }
+            } }),
+        React.createElement(BottomTab.Screen, { name: "Profile", component: ProfileNavigator, options: {
+                tabBarIcon: function (_a) {
+                    var color = _a.color;
+                    return React.createElement(TabBarIcon, { name: "ios-person", color: color });
                 }
             } })));
 }
@@ -58,10 +64,15 @@ function TabOneNavigator() {
 var TabTwoStack = stack_1.createStackNavigator();
 function TabTwoNavigator() {
     return (React.createElement(TabTwoStack.Navigator, null,
-        React.createElement(TabTwoStack.Screen, { name: "TabTwoScreen", component: TabTwoScreen_1["default"], options: { headerTitle: 'Tab Two Title' } })));
+        React.createElement(TabTwoStack.Screen, { name: "TabTwoScreen", component: TabTwoScreen_1["default"], options: { headerTitle: 'TTernTicket' } })));
 }
 var TabThreeStack = stack_1.createStackNavigator();
 function TabThreeNavigator() {
     return (React.createElement(TabThreeStack.Navigator, null,
-        React.createElement(TabThreeStack.Screen, { name: "TabTwoScreen", component: TabThreeScreen, options: { headerTitle: 'Tab Two Title' } })));
+        React.createElement(TabThreeStack.Screen, { name: "TabTwoScreen", component: NotificationScreen, options: { headerTitle: 'Notifications' } })));
+}
+var ProfileStack = stack_1.createStackNavigator();
+function ProfileNavigator() {
+    return (React.createElement(ProfileStack.Navigator, null,
+        React.createElement(ProfileStack.Screen, { name: "TabTwoScreen", component: ProfileScreen, options: { headerTitle: 'Your Profile' } })));
 }
