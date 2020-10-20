@@ -19,6 +19,7 @@ var Colors_1 = require("../constants/Colors");
 var useColorScheme_1 = require("../hooks/useColorScheme");
 var TabOneScreen_1 = require("../screens/TabOneScreen");
 var TabTwoScreen_1 = require("../screens/TabTwoScreen");
+var DestinationDetails_1 = require("../screens/DestinationDetails");
 var BottomTab = bottom_tabs_1.createBottomTabNavigator();
 function BottomTabNavigator() {
     var colorScheme = useColorScheme_1["default"]();
@@ -35,7 +36,7 @@ function BottomTabNavigator() {
                     return React.createElement(TabBarIcon, { name: "ios-search", color: color });
                 }
             } }),
-        React.createElement(BottomTab.Screen, { name: "Notifications", component: TabThreeNavigator, options: {
+        React.createElement(BottomTab.Screen, { name: "Destination Details", component: DestinationDetails_1["default"], options: {
                 tabBarIcon: function (_a) {
                     var color = _a.color;
                     return React.createElement(TabBarIcon, { name: "ios-text", color: color });
@@ -66,10 +67,10 @@ function TabTwoNavigator() {
     return (React.createElement(TabTwoStack.Navigator, null,
         React.createElement(TabTwoStack.Screen, { name: "TabTwoScreen", component: TabTwoScreen_1["default"], options: { headerTitle: 'TernTicket' } })));
 }
-var TabThreeStack = stack_1.createStackNavigator();
-function TabThreeNavigator() {
-    return (React.createElement(TabThreeStack.Navigator, null,
-        React.createElement(TabThreeStack.Screen, { name: "TabTwoScreen", component: NotificationScreen, options: { headerTitle: 'Notifications' } })));
+var DestinationStack = stack_1.createStackNavigator();
+function DestinationDetailsNavigator() {
+    return (React.createElement(DestinationStack.Navigator, null,
+        React.createElement(DestinationStack.Screen, { name: "TabTwoScreen", component: DestinationDetails_1["default"], options: { headerTitle: 'Destination Details' } })));
 }
 var ProfileStack = stack_1.createStackNavigator();
 function ProfileNavigator() {

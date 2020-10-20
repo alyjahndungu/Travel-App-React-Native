@@ -7,6 +7,8 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
+import DestinationDetails from '../screens/DestinationDetails';
+
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
@@ -34,8 +36,8 @@ export default function BottomTabNavigator() {
       />
 
         <BottomTab.Screen
-        name="Notifications"
-        component={TabThreeNavigator}
+        name="Destination Details"
+        component={DestinationDetails}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-text" color={color} />,
         }}
@@ -51,6 +53,7 @@ export default function BottomTabNavigator() {
     </BottomTab.Navigator>
   );
 }
+
 
 // You can explore the built-in icon families and icons on the web at:
 // https://icons.expo.fyi/
@@ -89,18 +92,18 @@ function TabTwoNavigator() {
 }
 
 
-const TabThreeStack = createStackNavigator<TabTwoParamList>();
+const DestinationStack = createStackNavigator<TabTwoParamList>();
 
 
-function TabThreeNavigator() {
+function DestinationDetailsNavigator() {
   return (
-    <TabThreeStack.Navigator>
-      <TabThreeStack.Screen
+    <DestinationStack.Navigator>
+      <DestinationStack.Screen
         name="TabTwoScreen"
-        component={NotificationScreen}
-        options={{ headerTitle: 'Notifications' }}
+        component={DestinationDetails}
+        options={{ headerTitle: 'Destination Details' }}
       />
-    </TabThreeStack.Navigator>
+    </DestinationStack.Navigator>
   );
 }
 

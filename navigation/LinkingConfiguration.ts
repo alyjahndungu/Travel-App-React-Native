@@ -16,9 +16,14 @@ export default {
               TabTwoScreen: 'two',
             },
           },
+          Destination: {
+            screens: {
+              DestinationDetails: 'destination',
+            },
+          },
         },
       },
       NotFound: '*',
     },
   },
-};
+};   
