@@ -32,7 +32,7 @@ const ProfileScreen = () => {
          </View>
 
 <View style={style.active}>
-
+  <View></View>
 </View>
 
          </View>

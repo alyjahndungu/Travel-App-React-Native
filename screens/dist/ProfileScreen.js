@@ -20,7 +20,8 @@ var ProfileScreen = function () {
                         } })),
                 React.createElement(Themed_1.View, { style: styles.dm },
                     React.createElement(vector_icons_1.Ionicons, { name: "ios-text", size: 26, color: "#DFD8C8" })),
-                React.createElement(Themed_1.View, { style: style.active })))));
+                React.createElement(Themed_1.View, { style: style.active },
+                    React.createElement(Themed_1.View, null))))));
 };
 var styles = react_native_1.StyleSheet.create({
     container: {
