@@ -31,7 +31,9 @@ const ProfileScreen = () => {
            <Ionicons name="ios-text" size={26} color="#DFD8C8" ></Ionicons>
          </View>
 
-<View style={style.dm}></View>
+<View style={style.active}>
+
+</View>
 
          </View>
        </ScrollView>
