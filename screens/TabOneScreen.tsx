@@ -5,23 +5,25 @@ import { Text, View } from '../components/Themed';
 
 
 export default function TabOneScreen() {
+
+
   return (
     <View style={styles.container}>
      <Image
               source={require("../assets/images/happyone.png")}
               style={{ width: 400, height: 300, alignSelf: "center" }}
             />
-      <Text style={styles.title}>Digital ticket</Text>
+      <Text style={styles.title}>~Digital Ticket~</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Text style={styles.about}>Easy solution to buy tickets for your travel, business trips, transportation, lodging and culnary.</Text>
-      
         <TouchableOpacity style={styles.continue} onPress={() => {
-                Actions.chat({ name: this.state.name });
+             
+            
               }}>
                 <Ionicons
                   name="md-arrow-round-forward"
                   size={37}
-                  color="#fff"
+                  color="#000"
                 />
               </TouchableOpacity>
     </View>
@@ -37,7 +39,8 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 30,
-    fontWeight: 'bold',
+    fontFamily: 'Nunito_Regular'
+    
   },
   separator: {
     marginVertical: 30,
@@ -46,11 +49,11 @@ const styles = StyleSheet.create({
   },
   about:{
     fontSize: 20,
-    fontWeight: 'bold',
     textAlign: 'center',
+    fontFamily: 'Nunito_Regular'
   },
   continue: {
-    backgroundColor: '#1e88e5',
+    backgroundColor: 'transparent',
     height: 40,
     marginTop: 20,
     width: '70%',

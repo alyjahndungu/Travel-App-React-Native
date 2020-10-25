@@ -5,16 +5,14 @@ var react_native_1 = require("react-native");
 var vector_icons_1 = require("@expo/vector-icons");
 var Themed_1 = require("../components/Themed");
 function TabOneScreen() {
-    var _this = this;
     return (React.createElement(Themed_1.View, { style: styles.container },
         React.createElement(react_native_1.Image, { source: require("../assets/images/happyone.png"), style: { width: 400, height: 300, alignSelf: "center" } }),
-        React.createElement(Themed_1.Text, { style: styles.title }, "Digital ticket"),
+        React.createElement(Themed_1.Text, { style: styles.title }, "~Digital Ticket~"),
         React.createElement(Themed_1.View, { style: styles.separator, lightColor: "#eee", darkColor: "rgba(255,255,255,0.1)" }),
         React.createElement(Themed_1.Text, { style: styles.about }, "Easy solution to buy tickets for your travel, business trips, transportation, lodging and culnary."),
         React.createElement(react_native_1.TouchableOpacity, { style: styles["continue"], onPress: function () {
-                Actions.chat({ name: _this.state.name });
             } },
-            React.createElement(vector_icons_1.Ionicons, { name: "md-arrow-round-forward", size: 37, color: "#fff" }))));
+            React.createElement(vector_icons_1.Ionicons, { name: "md-arrow-round-forward", size: 37, color: "#000" }))));
 }
 exports["default"] = TabOneScreen;
 var styles = react_native_1.StyleSheet.create({
@@ -25,7 +23,7 @@ var styles = react_native_1.StyleSheet.create({
     },
     title: {
         fontSize: 30,
-        fontWeight: 'bold'
+        fontFamily: 'Nunito_Regular'
     },
     separator: {
         marginVertical: 30,
@@ -34,11 +32,11 @@ var styles = react_native_1.StyleSheet.create({
     },
     about: {
         fontSize: 20,
-        fontWeight: 'bold',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: 'Nunito_Regular'
     },
     "continue": {
-        backgroundColor: '#1e88e5',
+        backgroundColor: 'transparent',
         height: 40,
         marginTop: 20,
         width: '70%',

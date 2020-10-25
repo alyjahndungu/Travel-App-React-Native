@@ -21,6 +21,11 @@ exports["default"] = {
                         screens: {
                             DestinationDetails: 'destination'
                         }
+                    },
+                    Login: {
+                        screens: {
+                            LoginScreen: 'login'
+                        }
                     }
                 }
             },

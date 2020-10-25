@@ -21,6 +21,11 @@ export default {
               DestinationDetails: 'destination',
             },
           },
+          Login: {
+             screens: {
+               LoginScreen : 'login',
+             },
+          },
         },
       },
       NotFound: '*',

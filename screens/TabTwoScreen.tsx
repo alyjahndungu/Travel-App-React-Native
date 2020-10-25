@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StyleSheet, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, Image, TouchableOpacity, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import EditScreenInfo from "../components/EditScreenInfo";
@@ -7,6 +7,7 @@ import { Text, View } from "../components/Themed";
 
 export default function TabTwoScreen() {
   return (
+    <ScrollView>
     <View style={styles.container}>
       <Image
         source={require("../assets/images/skier-illustration.png")}
@@ -22,19 +23,19 @@ export default function TabTwoScreen() {
         <View style={styles.optionsholder}>
           <TouchableOpacity style={styles.carstyle} onPress={() => {}}>
             <Ionicons name="ios-car" size={37} color="#1976d2" />
-            <Text>Taxi</Text>
+            <Text style={styles.text}>Taxi</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.bus} onPress={() => {}}>
             <Ionicons name="ios-bus" size={37} color="#536dfe" />
-            <Text>Bus</Text>
+            <Text style={styles.text}>Bus</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.airplane} onPress={() => {}}>
             <Ionicons name="ios-jet" size={37} color="#3949ab" />
-            <Text>Flight</Text>
+            <Text style={styles.text}>Flight</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.train} onPress={() => {}}>
             <Ionicons name="ios-train" size={37} color="#1a237e" />
-            <Text>Train</Text>
+            <Text style={styles.text}>Train</Text>
           </TouchableOpacity>
         </View>
 
@@ -42,19 +43,19 @@ export default function TabTwoScreen() {
         <View style={styles.optionstwo}>
          <TouchableOpacity style={styles.airplane} onPress={() => {}}>
             <Ionicons name="ios-compass" size={37} color="#1e88e5" />
-            <Text>Adventure</Text>
+            <Text style={styles.text}>Adventure</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.carstyle} onPress={() => {}}>
             <Ionicons name="ios-cafe" size={37} color="#fff" />
-            <Text>Eats</Text>
+            <Text style={styles.text}>Eats</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.train} onPress={() => {}}>
             <Ionicons name="ios-bonfire" size={37} color="#e53935" />
-            <Text >Events</Text>
+            <Text style={styles.text}>Events</Text>
           </TouchableOpacity>
            <TouchableOpacity style={styles.bus} onPress={() => {}}>
             <Ionicons name="ios-bed" size={37} color="#7986cb" />
-            <Text>Hotels</Text>
+            <Text style={styles.text}>Hotels</Text>
           </TouchableOpacity>
          
         </View>
@@ -62,6 +63,9 @@ export default function TabTwoScreen() {
 
       <Text style={styles.title}>Destination</Text>
 
+<ScrollView  horizontal
+showsHorizontalScrollIndicator={false}
+>
       <View style={styles.destination}>
         <View style={styles.pagination}>
           <TouchableOpacity onPress={() => {}}>
@@ -74,7 +78,7 @@ export default function TabTwoScreen() {
           alignSelf: "center",
         }}
       />
-            <Text>Hylax Hills</Text>
+            <Text style={styles.text}>Hylax Hills</Text>
           </TouchableOpacity>
           <TouchableOpacity  onPress={() => {}}>
                   <Image
@@ -86,7 +90,7 @@ export default function TabTwoScreen() {
           alignSelf: "center",
         }}
       />
-            <Text>Hells Gate</Text>
+            <Text style={styles.text}>Hells Gate</Text>
           </TouchableOpacity>
           <TouchableOpacity  onPress={() => {}}>
                     <Image
@@ -98,7 +102,7 @@ export default function TabTwoScreen() {
           alignSelf: "center",
         }}
       />
-            <Text>Ngong Hills</Text>
+            <Text style={styles.text}>Ngong Hills</Text>
           </TouchableOpacity>
           <TouchableOpacity  onPress={() => {}}>
                    <Image
@@ -110,15 +114,15 @@ export default function TabTwoScreen() {
           alignSelf: "center",
         }}
       />
-            <Text>Longonot</Text>
+            <Text style={styles.text}>Longonot</Text>
           </TouchableOpacity>
         </View>
-      
-      
-      </View>
 
+      </View>
+      </ScrollView>
       
     </View>
+    </ScrollView>
   );
 }
 
@@ -127,12 +131,14 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+
   },
   title: {
     fontSize: 20,
-    fontWeight: "bold",
     marginRight: 200,
     marginBottom: 5,
+    fontFamily: 'Nunito_Regular'
+
     
   },
   separator: {
@@ -194,4 +200,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: "22%",
   },
+  text: {
+    fontFamily: 'Nunito_Regular'
+  }
 });

@@ -64,7 +64,7 @@ function useCachedResources() {
                             _a.trys.push([0, 2, 3, 4]);
                             SplashScreen.preventAutoHideAsync();
                             // Load fonts
-                            return [4 /*yield*/, Font.loadAsync(__assign(__assign({}, vector_icons_1.Ionicons.font), { 'Nunito-regular': require('../assets/fonts/Nunito-Regular.ttf') }))];
+                            return [4 /*yield*/, Font.loadAsync(__assign(__assign({}, vector_icons_1.Ionicons.font), { Nunito_Regular: require('../assets/fonts/Nunito-Regular.ttf') }))];
                         case 1:
                             // Load fonts
                             _a.sent();

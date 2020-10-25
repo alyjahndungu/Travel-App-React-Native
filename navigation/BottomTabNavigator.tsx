@@ -7,6 +7,7 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
+import ProfileScreen from '../screens/ProfileScreen';
 import DestinationDetails from '../screens/DestinationDetails';
 
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
@@ -36,10 +37,10 @@ export default function BottomTabNavigator() {
       />
 
         <BottomTab.Screen
-        name="Destination Details"
+        name="Destination"
         component={DestinationDetails}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-text" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="ios-star" color={color} />,
         }}
       />
   
@@ -101,7 +102,7 @@ function DestinationDetailsNavigator() {
       <DestinationStack.Screen
         name="TabTwoScreen"
         component={DestinationDetails}
-        options={{ headerTitle: 'Destination Details' }}
+        options={{ headerTitle: 'Destination' }}
       />
     </DestinationStack.Navigator>
   );
@@ -114,10 +115,24 @@ function ProfileNavigator() {
   return (
     <ProfileStack.Navigator>
       <ProfileStack.Screen
-        name="TabTwoScreen"
+        name="Profile"
         component={ProfileScreen}
-        options={{ headerTitle: 'Your Profile' }}
+        options={{ headerTitle: 'Profile' }}
       />
     </ProfileStack.Navigator>
   );
+}
+
+const LoginStack = createStackNavigator<TabTwoParamList>();
+
+function LoginNavigator() {
+  return (
+    <LoginStack.Navigator>
+    <LoginStack.Screen
+        name="Login" component={LoginScreen}
+        options={{ headerTitle: 'Login' }}/>
+    
+    </LoginStack.Navigator>
+  );
+  
 }
