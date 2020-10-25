@@ -89,7 +89,7 @@ var styles = react_native_1.StyleSheet.create({
         fontSize: 20,
         marginRight: 200,
         marginBottom: 5,
-        fontFamily: 'Nunito_Regular'
+        fontFamily: "Nunito_Regular"
     },
     separator: {
         marginVertical: 30,
@@ -148,6 +148,6 @@ var styles = react_native_1.StyleSheet.create({
         width: "22%"
     },
     text: {
-        fontFamily: 'Nunito_Regular'
+        fontFamily: "Nunito_Regular"
     }
 });
