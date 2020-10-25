@@ -30,7 +30,14 @@ var ProfileScreen = function () {
                 React.createElement(Themed_1.View, { style: styles.statsBox },
                     React.createElement(Themed_1.Text, { style: styles.about }, "9+"),
                     React.createElement(Themed_1.Text, { style: styles.subText }, "Projects")),
-                React.createElement(Themed_1.View, { style: [styles.statsBox, { borderColor: '#DFD8C8', borderLeftWidth: 1, borderRightWidth: 1 }] },
+                React.createElement(Themed_1.View, { style: [
+                        styles.statsBox,
+                        {
+                            borderColor: "#DFD8C8",
+                            borderLeftWidth: 1,
+                            borderRightWidth: 1
+                        },
+                    ] },
                     React.createElement(Themed_1.Text, { style: styles.about }, "3+"),
                     React.createElement(Themed_1.Text, { style: styles.subText }, "Expirience")),
                 React.createElement(Themed_1.View, { style: styles.statsBox },
@@ -87,26 +94,26 @@ var styles = react_native_1.StyleSheet.create({
         marginTop: 26
     },
     name: {
-        fontFamily: 'Nunito_Regular',
+        fontFamily: "Nunito_Regular",
         fontSize: 23
     },
     about: {
-        fontFamily: 'Nunito_Regular'
+        fontFamily: "Nunito_Regular"
     },
     subText: {
-        fontFamily: 'Nunito_Regular',
+        fontFamily: "Nunito_Regular",
         fontSize: 12,
-        color: '#AEB5BC',
-        textTransform: 'uppercase',
-        fontWeight: '500'
+        color: "#AEB5BC",
+        textTransform: "uppercase",
+        fontWeight: "500"
     },
     statsContainer: {
-        flexDirection: 'row',
-        alignSelf: 'center',
+        flexDirection: "row",
+        alignSelf: "center",
         marginTop: 32
     },
     statsBox: {
-        alignItems: 'center',
+        alignItems: "center",
         flex: 1
     }
 });
