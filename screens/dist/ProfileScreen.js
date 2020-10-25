@@ -16,18 +16,31 @@ var ProfileScreen = function () {
                             width: 200,
                             height: 200,
                             borderRadius: 100,
-                            overflow: 'hidden'
+                            overflow: "hidden"
                         } })),
                 React.createElement(Themed_1.View, { style: styles.dm },
                     React.createElement(vector_icons_1.Ionicons, { name: "ios-text", size: 26, color: "#DFD8C8" })),
                 React.createElement(Themed_1.View, { style: styles.active },
                     React.createElement(Themed_1.View, { style: styles.add },
-                        React.createElement(vector_icons_1.Ionicons, { name: "ios-add", size: 48, color: "#DFD8C8" })))))));
+                        React.createElement(vector_icons_1.Ionicons, { name: "ios-add", size: 48, color: "#DFD8C8", style: { marginTop: 6, marginLeft: 2 } })))),
+            React.createElement(Themed_1.View, { style: styles.infoContainer },
+                React.createElement(Themed_1.Text, { style: styles.name }, "E.N Ternstone"),
+                React.createElement(Themed_1.Text, { style: styles.about }, "Software Engineer")),
+            React.createElement(Themed_1.View, { style: styles.statsContainer },
+                React.createElement(Themed_1.View, { style: styles.statsBox },
+                    React.createElement(Themed_1.Text, { style: styles.about }, "9+"),
+                    React.createElement(Themed_1.Text, { style: styles.subText }, "Projects")),
+                React.createElement(Themed_1.View, { style: [styles.statsBox, { borderColor: '#DFD8C8', borderLeftWidth: 1, borderRightWidth: 1 }] },
+                    React.createElement(Themed_1.Text, { style: styles.about }, "3+"),
+                    React.createElement(Themed_1.Text, { style: styles.subText }, "Expirience")),
+                React.createElement(Themed_1.View, { style: styles.statsBox },
+                    React.createElement(Themed_1.Text, { style: styles.about }, "4+"),
+                    React.createElement(Themed_1.Text, { style: styles.subText }, "Languages"))))));
 };
 var styles = react_native_1.StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff'
+        backgroundColor: "#fff"
     },
     titleBar: {
         flexDirection: "row",
@@ -38,18 +51,18 @@ var styles = react_native_1.StyleSheet.create({
         borderTopRightRadius: 9
     },
     dm: {
-        backgroundColor: '#41444B',
-        position: 'absolute',
+        backgroundColor: "#41444B",
+        position: "absolute",
         top: 20,
         width: 40,
         height: 40,
         borderRadius: 20,
-        alignItems: 'center',
-        justifyContent: 'center'
+        alignItems: "center",
+        justifyContent: "center"
     },
     active: {
-        backgroundColor: '#34FFB9',
-        position: 'absolute',
+        backgroundColor: "#34FFB9",
+        position: "absolute",
         bottom: 28,
         left: 10,
         padding: 4,
@@ -58,14 +71,43 @@ var styles = react_native_1.StyleSheet.create({
         borderRadius: 10
     },
     add: {
-        backgroundColor: '#41444B',
-        position: 'absolute',
-        top: 20,
-        width: 40,
-        height: 40,
-        borderRadius: 20,
+        backgroundColor: "#41444B",
+        position: "absolute",
+        bottom: 0,
+        left: 147,
+        width: 60,
+        height: 60,
+        borderRadius: 30,
+        alignItems: "center",
+        justifyContent: "center"
+    },
+    infoContainer: {
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: 26
+    },
+    name: {
+        fontFamily: 'Nunito_Regular',
+        fontSize: 23
+    },
+    about: {
+        fontFamily: 'Nunito_Regular'
+    },
+    subText: {
+        fontFamily: 'Nunito_Regular',
+        fontSize: 12,
+        color: '#AEB5BC',
+        textTransform: 'uppercase',
+        fontWeight: '500'
+    },
+    statsContainer: {
+        flexDirection: 'row',
+        alignSelf: 'center',
+        marginTop: 32
+    },
+    statsBox: {
         alignItems: 'center',
-        justifyContent: 'center'
+        flex: 1
     }
 });
 exports["default"] = ProfileScreen;
