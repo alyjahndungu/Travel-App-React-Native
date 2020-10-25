@@ -31,8 +31,10 @@ const ProfileScreen = () => {
            <Ionicons name="ios-text" size={26} color="#DFD8C8" ></Ionicons>
          </View>
 
-<View style={style.active}>
-  <View></View>
+<View style={styles.active}>
+  <View style={styles.add}>
+           <Ionicons name="ios-add" size={48} color="#DFD8C8" ></Ionicons>
+  </View>
 </View>
 
          </View>
@@ -74,6 +76,16 @@ const styles = StyleSheet.create({
        width: 20,
       height: 20,
       borderRadius: 10
+  },
+  add: {
+      backgroundColor:'#41444B',
+      position:'absolute',
+      top: 20,
+      width: 40,
+      height: 40,
+      borderRadius: 20,
+      alignItems: 'center',
+      justifyContent: 'center'
   }
 
 });

@@ -20,8 +20,9 @@ var ProfileScreen = function () {
                         } })),
                 React.createElement(Themed_1.View, { style: styles.dm },
                     React.createElement(vector_icons_1.Ionicons, { name: "ios-text", size: 26, color: "#DFD8C8" })),
-                React.createElement(Themed_1.View, { style: style.active },
-                    React.createElement(Themed_1.View, null))))));
+                React.createElement(Themed_1.View, { style: styles.active },
+                    React.createElement(Themed_1.View, { style: styles.add },
+                        React.createElement(vector_icons_1.Ionicons, { name: "ios-add", size: 48, color: "#DFD8C8" })))))));
 };
 var styles = react_native_1.StyleSheet.create({
     container: {
@@ -55,6 +56,16 @@ var styles = react_native_1.StyleSheet.create({
         width: 20,
         height: 20,
         borderRadius: 10
+    },
+    add: {
+        backgroundColor: '#41444B',
+        position: 'absolute',
+        top: 20,
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 });
 exports["default"] = ProfileScreen;
