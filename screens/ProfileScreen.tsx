@@ -56,23 +56,30 @@ const ProfileScreen = () => {
           <Text style={styles.about}>Software Engineer</Text>
         </View>
 
-        <View style={styles.statsContainer}> 
-        <View style={styles.statsBox}>
-          <Text style={styles.about}>9+</Text>
-          <Text style={styles.subText}>Projects</Text>
-        </View>
+        <View style={styles.statsContainer}>
+          <View style={styles.statsBox}>
+            <Text style={styles.about}>9+</Text>
+            <Text style={styles.subText}>Projects</Text>
+          </View>
 
-        <View style={[styles.statsBox, { borderColor:'#DFD8C8', borderLeftWidth: 1, borderRightWidth: 1}]} >
-          <Text style={styles.about}>3+</Text>
-          <Text style={styles.subText}>Expirience</Text>
-        </View>
+          <View
+            style={[
+              styles.statsBox,
+              {
+                borderColor: "#DFD8C8",
+                borderLeftWidth: 1,
+                borderRightWidth: 1,
+              },
+            ]}
+          >
+            <Text style={styles.about}>3+</Text>
+            <Text style={styles.subText}>Expirience</Text>
+          </View>
 
-        <View style={styles.statsBox}>
-          <Text style={styles.about}>4+</Text>
-          <Text style={styles.subText}>Languages</Text>
-        </View>
-
-
+          <View style={styles.statsBox}>
+            <Text style={styles.about}>4+</Text>
+            <Text style={styles.subText}>Languages</Text>
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -129,29 +136,27 @@ const styles = StyleSheet.create({
     marginTop: 26,
   },
   name: {
-      fontFamily: 'Nunito_Regular',
-      fontSize:23
+    fontFamily: "Nunito_Regular",
+    fontSize: 23,
   },
   about: {
-         fontFamily: 'Nunito_Regular',
-       
+    fontFamily: "Nunito_Regular",
   },
   subText: {
-         fontFamily: 'Nunito_Regular',
-      fontSize:12,
-      color:'#AEB5BC',
-      textTransform: 'uppercase',
-      fontWeight:'500'
-         
+    fontFamily: "Nunito_Regular",
+    fontSize: 12,
+    color: "#AEB5BC",
+    textTransform: "uppercase",
+    fontWeight: "500",
   },
   statsContainer: {
-      flexDirection: 'row',
-      alignSelf: 'center',
-      marginTop: 32
+    flexDirection: "row",
+    alignSelf: "center",
+    marginTop: 32,
   },
   statsBox: {
-      alignItems: 'center',
-      flex:1
-  }
+    alignItems: "center",
+    flex: 1,
+  },
 });
 export default ProfileScreen;
