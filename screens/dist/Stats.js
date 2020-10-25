@@ -15,7 +15,7 @@ var styles = react_native_1.StyleSheet.create({
         borderRadius: 16
     },
     statContainer: {
-        backgroundColor: '#ff33aaff',
+        backgroundColor: "#ff33aaff",
         marginBottom: 20
     }
 });
