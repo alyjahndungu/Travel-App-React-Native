@@ -1,31 +1,29 @@
-import * as React from 'react';
-import { StyleSheet, Image, TouchableOpacity, ScrollView } from 'react-native';
+import * as React from "react";
+import { StyleSheet, Image, TouchableOpacity, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { Text, View } from '../components/Themed';
-
+import { Text, View } from "../components/Themed";
 
 const LoginScreen = () => {
-     return(
-      <ScrollView>
+  return (
+    <ScrollView>
+      <View>
         <View>
-        <View>
-        <Image source={require("./assets/images/yoga-logo.webp")} style={styles.image}/> 
-        <Text>LeTrip</Text>
+          <Image
+            source={require("./assets/images/yoga-logo.webp")}
+            style={styles.image}
+          />
+          <Text>LeTrip</Text>
         </View>
-        
-        </View>
-      </ScrollView>
-
-     );
-
-}
+      </View>
+    </ScrollView>
+  );
+};
 const styles = StyleSheet.create({
-     image: {
-         width: '30rem',
-         height: '30rem',
-         borderRadius: 20
-     }
-
+  image: {
+    width: "30rem",
+    height: "30rem",
+    borderRadius: 20,
+  },
 });
 
 export default LoginScreen;

@@ -12,8 +12,8 @@ var LoginScreen = function () {
 };
 var styles = react_native_1.StyleSheet.create({
     image: {
-        width: '30rem',
-        height: '30rem',
+        width: "30rem",
+        height: "30rem",
         borderRadius: 20
     }
 });
